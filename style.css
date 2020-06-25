@@ -1,0 +1,59 @@
+
+
+#txtElement1, #txtElement2 ,#txtElement3{
+  display:inline;
+  color: red;
+}
+
+#inputElement1, #inputElement2, #inputElement3 , #inputElement3{
+  display: none;
+}
+
+#btn1, #btn2,#btn3{
+  display:none;
+}
+
+#txtElement4{
+  display: none;
+}
+
+.login-section{
+  width: 350px;
+  height: 300px;
+  position: relative;
+}
+
+.move-top-1{
+  margin-top: -50px;
+  transition: all 0.5s ease;
+}
+.move-top-2{
+  margin-top: -50px;
+  transition: all 0.5s ease;
+}
+.move-top-3{
+  margin-top: 12px !important;
+  transition: all 0.5s ease;
+}
+
+.item-3{
+  margin-top: 30px;
+}
+
+.item-4{
+  margin-top: 30px;
+}
+.item-5{
+  margin-top: 50px;
+}
+
+#btn4{
+  opacity: 0;
+  display: block;
+}
+
+.submit-btn{
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+  margin-top: -30px;
+}
