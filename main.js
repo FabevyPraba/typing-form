@@ -28,16 +28,16 @@ function setDelay(el, text, inputElment, i, textLength, btn) {
        
         if(i == textLength-1){
        
-            $(inputElment).css("display","inline").delay(1000);
+            $(inputElment).css("display","inline").delay(1000).focus();
 
-            $( '#inputElement1').focus(function() {
-                if ( $('#inputElement1').val() == '') {
-                   $(btn1).show();
-                }
-            }); 
+            setTimeout(function () {
+                $('#btn1').show(); 
+            },1500)
+            
+                 
         }
 
-    }, 70*i);
+    }, 70 * i);
 }
 
 
@@ -51,11 +51,9 @@ $("#btn1").on("click", function(e){
         var inptElm2 = $("#inputElement2");
         var btn2 = $("#btn2");
 
-        $( '#inputElement2').focus(function() {
-            if ( $('#inputElement2').val() == '') {
-                $(btn2).show();
-            }
-        });
+        setTimeout(function () {
+            $('#btn2').show(); 
+        },5500)
         
         typeAnimation (elm2,typText2,inptElm2, btn2);
     }else{
@@ -81,11 +79,9 @@ $("#btn2").on("click", function(e){
         var inptElm3 = $("#inputElement3");
         var btn3 = $("#btn3");
 
-        $( '#inputElement3').focus(function() {
-            if ( $('#inputElement3').val() == '') {
-                $(btn3).show();
-            }
-        }); 
+        setTimeout(function () {
+            $('#btn3').show(); 
+        },7000)
 
         $('.item-1').addClass('move-top-1');
         typeAnimation (elm3,typText3,inptElm3, btn3);
